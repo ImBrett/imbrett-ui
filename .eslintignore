@@ -2,7 +2,9 @@
 /src-bex/www
 /src-capacitor
 /src-cordova
+/src-pwa
 /.quasar
 /node_modules
 /src-ssr
 .eslintrc.js
+quasar.conf.js

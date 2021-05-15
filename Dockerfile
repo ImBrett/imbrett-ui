@@ -6,7 +6,7 @@ RUN yarn
 COPY ./ ./
 EXPOSE 8080
 
-FROM develop-stage AS build-stage
+FROM setup-stage AS build-stage
 RUN quasar build -m pwa
 
 FROM nginx:stable-alpine AS production-stage
