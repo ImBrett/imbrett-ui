@@ -20,22 +20,20 @@
         <div class="row q-gutter-md justify-center q-mt-lg">
           <q-btn
             color="accent"
+            label="Connect with me"
             icon="fab fa-linkedin"
             type="a"
             target="_blank"
             href="https://www.linkedin.com/in/iversonb/"
-          >
-            Connect
-          </q-btn>
+          />
           <q-btn
             type="a"
             target="_blank"
             href="https://www.github.com/imbrett"
             color="black"
+            label="My Work"
             icon="fab fa-github"
-          >
-            View
-          </q-btn>
+          />
         </div>
       </div>
     </div>

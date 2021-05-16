@@ -79,7 +79,7 @@ import EssentialLink from '../components/shared/EssentialLink.vue';
   components: { EssentialLink },
 })
 export default class MainLayout extends Vue {
-  leftDrawerOpen = true;
+  leftDrawerOpen = false;
 
   linksData = [
     {
