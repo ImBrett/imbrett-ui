@@ -1,6 +1,6 @@
 on:
   workflow_run:
-    workflows: ["Lint", "CodeQL"]
+    workflows: ["CodeQL"]
     branches: [main]
     types:
       - completed
