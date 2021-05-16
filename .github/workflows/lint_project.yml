@@ -1,12 +1,13 @@
+name: "Lint"
+
 on:
-  workflow_run:
-    workflows: ["Lint", "CodeQL"]
-    branches: [main]
-    types:
-      - completed
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
 
 jobs:
-  deploy_pages:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,11 +21,8 @@ jobs:
           path: node_modules
           key: yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: yarn
-      - run: yarn build-pwa
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/pwa
-      - if: always()
+      - run: yarn install --ignore-scripts --frozen-lockfile
+      - run: yarn lint --fix
+      - name: We're done with yarn, uninstall it
+        if: always()
         run: npm uninstall -g yarn
