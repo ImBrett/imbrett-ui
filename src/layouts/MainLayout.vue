@@ -88,6 +88,12 @@ export default class MainLayout extends Vue {
       icon: 'fas fa-home',
       link: 'app.home',
     },
+    {
+      title: 'About',
+      caption: 'About me',
+      icon: 'fas fa-question',
+      link: 'app.about',
+    },
   ];
 }
 </script>
