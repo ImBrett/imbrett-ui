@@ -16,6 +16,7 @@ import Hero from '../components/home/Hero.vue';
     Hero,
     Features: () => import('../components/home/Features.vue'),
     AvailabilityBanner: () =>
+      // eslint-disable-next-line implicit-arrow-linebreak
       import('../components/home/AvailabilityBanner.vue'),
     Projects: () => import('../components/home/Projects.vue'),
   },
