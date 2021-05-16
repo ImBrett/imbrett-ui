@@ -1,6 +1,7 @@
 <template>
   <q-page>
     <hero />
+    <availability-banner />
     <features />
     <projects />
   </q-page>
@@ -14,8 +15,8 @@ import Hero from '../components/home/Hero.vue';
   components: {
     Hero,
     Features: () => import('../components/home/Features.vue'),
-    // AvailabilityBanner: () =>
-    // import('../components/home/AvailabilityBanner.vue'),
+    AvailabilityBanner: () =>
+      import('../components/home/AvailabilityBanner.vue'),
     Projects: () => import('../components/home/Projects.vue'),
   },
 })

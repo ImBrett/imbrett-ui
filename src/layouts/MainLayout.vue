@@ -79,7 +79,7 @@ import EssentialLink from '../components/shared/EssentialLink.vue';
   components: { EssentialLink },
 })
 export default class MainLayout extends Vue {
-  leftDrawerOpen = true;
+  leftDrawerOpen = false;
 
   linksData = [
     {
@@ -87,6 +87,12 @@ export default class MainLayout extends Vue {
       caption: 'homepage',
       icon: 'fas fa-home',
       link: 'app.home',
+    },
+    {
+      title: 'About',
+      caption: 'About me',
+      icon: 'fas fa-question',
+      link: 'app.about',
     },
   ];
 }

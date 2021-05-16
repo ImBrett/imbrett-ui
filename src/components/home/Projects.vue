@@ -2,8 +2,8 @@
   <div>
 
     <div class="row justify-center">
-      <p class="text-h2 text-uppercase text-dark">
-        <span>Projects I'm actively developing</span>
+      <p class="text-h3 text-uppercase text-dark">
+        <span>Projects I Develop</span>
       </p>
     </div>
 

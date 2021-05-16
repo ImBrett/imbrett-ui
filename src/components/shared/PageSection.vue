@@ -1,13 +1,10 @@
 <template>
   <div
-    class="row q-my-md justify-center align-center"
+    class="row q-pa-md justify-center align-center"
     :style="flip ? 'flex-direction: row-reverse' : ''"
   >
     <div class="col-12 col-md-6 self-center">
-      <q-card
-        flat
-        class="q-pa-xl"
-      >
+      <q-card flat>
         <q-card-section class="text-h4 text-accent">
           {{ title }}
         </q-card-section>
